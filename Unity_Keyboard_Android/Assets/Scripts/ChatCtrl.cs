@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ChatCtrl : MonoBehaviour
 {
-    public Canvas canvas;
     public TextMeshProUGUI text;
     public TMP_InputField inputField;
     private MobileInputField mobileInputField;
