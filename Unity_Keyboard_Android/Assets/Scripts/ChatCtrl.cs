@@ -46,11 +46,6 @@ public class ChatCtrl : MonoBehaviour
         UpdatePanelPosition(height);
     }
 
-    void Update()
-    {
-        Debug.Log($"Update panelRect:{panelRect.rect}");
-    }
-
     void SendMessage()
     {
         string message = mobileInputField.Text;
@@ -83,7 +78,7 @@ public class ChatCtrl : MonoBehaviour
 #elif UNITY_IOS
     return (float)TouchScreenKeyboard.area.height * canvas.scaleFactor;
 #else
-    return 0f;
+        return 0f;
 #endif
     }
 
